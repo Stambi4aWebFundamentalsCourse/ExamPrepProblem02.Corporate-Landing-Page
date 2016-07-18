@@ -1,0 +1,251 @@
+﻿@font-face {
+    src:url("fonts/Ubuntu-L.ttf");
+    font-family:Ubuntu-Light;
+}
+
+@font-face {
+    src:url("fonts/Ubuntu-M.ttf");
+    font-family:Ubuntu-Medium;
+}
+
+@font-face {
+    src:url("fonts/Ubuntu-B.ttf");
+    font-family:Ubuntu-Bold;
+}
+
+@font-face {
+    src:url("fonts/MyriadPro-Regular.0tf");
+    font-family:MyriadPro;
+}
+
+body {
+    #wrapper {
+        width: 1100px;
+        margin: 0 auto;
+        border: 1px solid #999;
+        font-family: MyriadPro;
+        font-size: 13px;
+        section#head-section {
+            color: white;
+            background: linear-gradient(to right, rgba(80,90,143,1) 0%, rgba(76,153,159,1) 98%, rgba(76,153,159,1) 100%);
+            header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                border-bottom: 1px solid #749FC1;
+                h1 {
+                    margin: 5px 200px;
+                    display: inline;
+                    font-family: Ubuntu-Light;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    color: white;
+                }
+                nav{
+                    ul {
+                        display: inline;
+                        margin-top: 10px;
+                        padding-right: 100px;
+                        li{
+                            display: inline-block;
+                            margin: 5px 5px;
+                            a {
+                                text-decoration: none;
+                                color: white;
+                                font-family: Ubuntu-Light;
+                                font-size: 13px;
+                                line-height: 30px;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+            }
+            section {
+                padding-bottom: 10px;
+                ul {
+                    height: auto;
+                    display: block;
+                    vertical-align: middle;
+                    text-align: center;
+                    li {
+                        display: block;
+                        h1 {
+                            color:#58EEFF;
+                            font-size:60px;
+                            font-family: Ubuntu-Medium;
+                            text-transform: uppercase;
+                            margin-bottom: 0px;
+                        }
+                        h6 {
+                            margin-top: 0px;
+                            font-family: Ubuntu-Light;
+                            font-size: 16px;
+                            color: white;
+                            text-transform: uppercase;
+                        }
+
+                        h2 {
+                            font-family: Ubuntu-Light;
+                            font-size: 60px;
+                            color: white;
+                        }
+                        a#button {
+                            display: block;
+                            margin: 0 auto;
+                            text-decoration: none;
+                            width: 150px;
+                            background-color: rgba(255, 255, 255, 0);
+                            font-family: Ubuntu-Medium;
+                            font-size: 24px;
+                            border: 1px solid white;
+                            color: white;
+                            padding: 5px 40px;
+                            margin-bottom: 50px;
+                        }
+                        a {
+                            text-transform: capitalize;
+                            display: block;
+                            color: white;
+                            font-family: MyriadPro;
+                            font-weight: 600;
+                            font-size: 16px;
+                            &:hover {
+                                color: #58EEFF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        section#middle-section {
+            header {
+                h1 {
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+            }
+            section {
+                color: #444;
+                ul {
+                    display: inline-block;
+                    text-align: center;
+                    li {
+                        margin: 20px;
+                        display: inline-block;
+                        width: 20%;
+                        text-align: center;
+                        h2 {
+                            height: 50px;
+                            font-family:Ubuntu-Light;
+                            font-size: 20px;
+                        }
+                        p {
+                            font-family:Ubuntu-Light;
+                            font-size: 13px;
+                        }
+                        a {
+                            color: #58EEFF;
+                            font-family:Ubuntu-Light;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            footer {
+                display: block;
+                background-color: #FF7978;
+                text-align:center;
+               line-height: 60px;
+                h6 {
+                    font-family:Ubuntu-Light;
+                    font-size: 20px;
+                    color: white;
+                    text-transform: uppercase;
+                    margin: 0 auto;
+                }
+            }
+        }
+        section#bottom-section {
+            header {
+                h1 {
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+            }
+            section {
+                ul {
+                    padding: 0;
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin: auto;
+                    text-align: center;
+                    width: 100%;
+                    li {
+                        width: 45%;
+                        ul {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            margin: auto;
+                            li {
+                                background-color: #F7F8FA;
+                                article {            
+                                }
+                            }
+                            li {
+                                h6 {
+                                    font-family:Ubuntu-Light;
+                                    font-size: 20px;
+                                    margin: 5px auto;
+                                }
+                                p {
+                                    font-family:Ubuntu-Light;
+                                    font-size: 13px;
+                                    margin: 0 auto;
+                                }
+                            }
+                        } 
+                    }
+                }
+            }
+            footer {
+                background-color: white;
+                article {
+                    margin: 0 auto;
+                    h1{
+                        text-align: center;
+                    }
+                    p, details {
+                        margin: 0 auto;
+                        width: 70%;
+                        font-family:MyriadPro;
+                        font-size: 16px;
+                        
+                    }
+                    details {
+                        color: #58EEFF;
+                    }
+                    p {
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+        footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            color: #666;
+            background-color: #282E3A;
+            padding: 10px;
+        }
+    }
+}
+
+h1.section-title {
+    font-family: Ubuntu-Light;
+    font-size: 28px;
+}
